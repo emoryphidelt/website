@@ -14,7 +14,7 @@ body {
 
 .carousel-inner{
   width:100%;
-  max-height: 500px !important;
+  max-height: 400px !important;
 }
 
 .navbar {
@@ -38,6 +38,11 @@ body {
   width:100%;
 }
 
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev{
+    display:block;
+}
 
 .headerphoto img {
     width:250px;
@@ -139,10 +144,19 @@ bottom: 0;
 
     </nav>
 
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="img/colonization.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-caption text-center">
+          <h1>Recruitment</h1>
+        </div>
+      </div>
+    </div>
 
 
         <div class="container mt-3 mb-4">
-          <h3>Recruitment Information</h3>
             <div class="row">
               <div class="col-sm d-flex mb-3">
                 <div class="card">
