@@ -206,8 +206,19 @@ bottom: 0;
         <div class="col ml-1 mb-3 mr-1">
           <div class="card">
             <div class="card-body">
-              <link href="https://assets.juicer.io/embed.css" media="all" rel="stylesheet" type="text/css" />
-<ul class="juicer-feed" data-feed-id="emoryphidelt" data-per="3"></ul>
+
+              <!-- Place <div> tag where you want the feed to appear -->
+              <div id="curator-feed"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
+              <!-- The Javascript can be moved to the end of the html page before the </body> tag -->
+              <script type="text/javascript">
+              // curator-feed
+              (function(){
+                  var i, e, d = document, s = "script";i = d.createElement("script");i.async = 1;
+                  i.src = "https://cdn.curator.io/published/f5ea4754-3eb5-44ec-8280-81a9b6dc.js";
+                  e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+              })();
+              </script>
+
             </div>
           </div>
         </div>
